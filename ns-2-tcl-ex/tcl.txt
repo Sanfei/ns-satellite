@@ -1,1 +1,11 @@
-123
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+
+sudo apt-get install gcc-4.9 gcc-4.9-multilib g++-4.9 g++-4.9-multilib
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 50
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 90
+
+
+sudo update-alternatives --config g++
+sudo update-alternatives --config gcc
