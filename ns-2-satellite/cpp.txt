@@ -1,18 +1,20 @@
 http://nsnam.sourceforge.net/wiki/index.php/Running_Ns_and_Nam_Under_Windows_9x/2000/XP_Using_Cygwin
-
-Windows Support for Ns-2.27 and Earlier
 Ns versions up to 2.1b9 work under Windows using Visual C++ (Native Port). 
 However, this method is not actively supported anymore in more recent versions. 
-If you need to use such a version on Windows, you can still find the old instructions on the Windows / Visual C++ page. 
-Since version 2.1b9, ns has used Cygwin/gcc instead of Visual C++. Instructions for running ns 2.1b9, 2.26, and 2.27 under Cygwin are available here.
 
+Since version 2.1b9, ns has used Cygwin/gcc instead of Visual C++. Instructions for running ns 2.1b9, 2.26, and 2.27 under Cygwin are available here.
 https://www.isi.edu/nsnam/ns/ns-win32-build.html
 
-=
 https://www.microsoft.com/en-us/download/details.aspx?id=52394
+
 https://isi.edu/nsnam/ns/ns-problems.html#ns-2.1b9
 
 http://ce.sharif.edu/~m_amiri/project/networksimulator1/index.htm
 ns-2.1b9a-win32.exe
 nam-1.0a11a-win32.exe
 ActiveTcl8.3.4.2-1-win32-ix86.exe
+
+.bashrc
+export PATH=$PATH:/home/Sanfei/ns-allinone-2.35/bin:/home/Sanfei/ns-allinone-2.35/tcl8.5.10/unix:/home/Sanfei/ns-allinone-2.35/tk8.5.10/unix
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/Sanfei/ns-allinone-2.35/otcl-1.14:/home/Sanfei/ns-allinone-2.35/lib
+export TCL_LIBRARY=$TCL_LIBRARY:/home/Sanfei/ns-allinone-2.35/tcl8.5.10/library
